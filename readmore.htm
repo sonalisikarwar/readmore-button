@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#more {display: none;}
+</style>
+</head>
+<body>
+
+<center>
+    <h2>Corona viruses</h2><br><br>​​<p>Coronaviruses are a group of related RNA viruses that cause diseases in mammals and birds. In humans,<br> these viruses cause respiratory tract infections that can range from mild to lethal. <br>Mild illnesses include some cases of the common cold (which is also caused by other viruses, predominantly rhinoviruses),<br> while more lethal varieties can cause SARS, MERS, and COVID-19. Symptoms in other species<br> vary: in chickens, they cause an upper respiratory tract disease, while in cows and pigs they <br>cause diarrhea. There are as yet no v<span id="dots">...</span><span id="more">accines or antiviral drugs to prevent or treat human coronavirus infections.</span></p>
+
+</center>
+<center>
+<button onclick="myFunction()" id="myBtn">Read more</button></center>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+</body>
+</html>
